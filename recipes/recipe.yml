@@ -59,6 +59,9 @@ modules:
       - yubico-piv-tool
       - borgbackup
       - syncthing
+      # fedora and oci dev-tools
+      - osbuild
+      - koji
       # personal - fonts
       - cascadia-fonts-all
       - fontawesome-fonts-all
