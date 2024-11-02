@@ -73,6 +73,8 @@ modules:
       - libvirt
       - qemu
       - swtpm-tools
+      - swtpm
+      - edk2-ovmf
       - virt-manager
       - virtio-win
       - tuned
