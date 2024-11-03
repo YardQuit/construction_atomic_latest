@@ -16,3 +16,7 @@
 #       - name: "Setup libvirt"
 #         path: "/etc/yafti/scripts/script_libvirt.sh"
 #         description: "Configures libirt path and add libvirt group to $USER"
+
+#       - name: "Setup syncthing"
+#         path: "/etc/yafti/scripts/script_libvirt.sh"
+#         description: "enables syncthing service"

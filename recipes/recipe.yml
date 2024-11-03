@@ -139,6 +139,7 @@ modules:
       - gstreamer-plugins-espeak
       # personal - extra
       - starship
+      - lf
       - iucode-tool
       - stow
       - stow-doc
@@ -218,6 +219,7 @@ modules:
       # personal scripts
       - kvm.sh
       - yubico.sh
+      - repo.sh
 
   - type: yafti
   
