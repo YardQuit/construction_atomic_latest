@@ -70,6 +70,12 @@ modules:
       - rpmdevtools
       - rpmlint
       - policycoreutils
+      - libselinux-utils
+      - selinux-policy-doc
+      - selinux-policy-mls
+      - selinux-policy-targeted
+      - setools-console
+      - setools-console-analyses
       - livecd-tools
       - pykickstart
       - rustup
@@ -78,6 +84,7 @@ modules:
       - clang 
       - gdb
       - gdb-doc
+      - valgrind
       - golang
       - golang-x-tools-gopls
       - python3-lsp-black
@@ -113,7 +120,11 @@ modules:
       - python3-libguestfs
       # personal - extra
       - starship
+      - iucode-tool
       - stow
+      - stow-doc
+      - texinfo
+      - tldr
       - yum-utils
       - ptyxis
       - inxi
@@ -126,6 +137,14 @@ modules:
       - pinentry-tty
       - pinentry-emacs
       - translate-shell
+      - lm_sensors
+      - lshw
+      - mediainfo
+      - mpv
+      - nvtop
+      - parallel
+      - xxd
+      - sassc
     remove:
 
   - type: bling
