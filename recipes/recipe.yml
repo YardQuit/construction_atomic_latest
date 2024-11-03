@@ -48,7 +48,6 @@ modules:
       - cosmic-idle
       - NetworkManager-tui
       - NetworkManager-openvpn
-      # - power-profiles-daemon
       - gnome-keyring
       - pinentry-gnome3
       # personal - security and backup
@@ -59,9 +58,34 @@ modules:
       - yubico-piv-tool
       - borgbackup
       - syncthing
-      # fedora and oci dev-tools
+      # fedora, oci, and general development tools
+      - helix
+      - neovim
       - osbuild
       - koji
+      - fedora-packager
+      - fedora-review
+      - packit
+      - rpm-spec-language-server
+      - rpmdevtools
+      - rpmlint
+      - policycoreutils
+      - livecd-tools
+      - pykickstart
+      - rustup
+      - rust-gdb
+      - rust2rpm
+      - clang 
+      - gdb
+      - gdb-doc
+      - golang
+      - golang-x-tools-gopls
+      - python3-lsp-black
+      - python3-lsp-server+all
+      - python3-mypy
+      - python3-pytest
+      - python3-pytest-lsp
+      - python-pip
       # personal - fonts
       - cascadia-fonts-all
       - fontawesome-fonts-all
@@ -71,17 +95,26 @@ modules:
       # personal - virtualization
       - docker
       - libvirt
+      - libvirt-daemon-config-network
+      - libvirt-daemon-kvm
+      - virt-install
+      - virt-manager
+      - virt-viewer
+      - virt-top
+      - virtio-win
       - qemu
+      - qemu-kvm
+      - tuned
       - swtpm-tools
       - swtpm
       - edk2-ovmf
-      - virt-manager
-      - virtio-win
-      - tuned
+      - libguestfs
+      - libguestfs-bash-completion
+      - python3-libguestfs
       # personal - extra
       - starship
-      - helix
-      - neovim
+      - stow
+      - yum-utils
       - ptyxis
       - inxi
       - fastfetch
@@ -134,7 +167,6 @@ modules:
     system:
       enabled:
         # cosmic desktop environment
-        # - power-profiles-daemon.service
         # personal services
         - rpm-ostreed-automatic.timer
         - fail2ban.service
@@ -161,6 +193,6 @@ stages:
         no-cache: true
         snippets:
           - "cargo install --locked --all-features blue-build"
-    
+
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
