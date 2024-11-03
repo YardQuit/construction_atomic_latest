@@ -51,6 +51,7 @@ modules:
       - NetworkManager-openvpn
       - gnome-keyring
       - pinentry-gnome3
+      - udiskie
       # personal - security and backup
       - 1password
       - fail2ban
