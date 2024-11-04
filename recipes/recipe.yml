@@ -69,7 +69,6 @@ modules:
       - podman-bootc
       - podman-machine
       - podman-compose
-      - podman-tui
       - fedora-packager
       - fedora-review
       - packit
@@ -120,8 +119,10 @@ modules:
       - qemu
       - qemu-kvm
       - tuned
-      - swtpm-tools
       - swtpm
+      - swtpm-libs
+      - swtpm-tools
+      - swtpm-selinux
       - edk2-ovmf
       - libguestfs
       - libguestfs-bash-completion
@@ -217,6 +218,7 @@ modules:
         - fail2ban.service
         - tuned.service
         - docker.service
+        - podman.socket
         - fstrim.timer
       disable:
         - cosmic-greeter.service
