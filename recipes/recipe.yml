@@ -67,6 +67,9 @@ modules:
       - osbuild
       - koji
       - podman-bootc
+      - podman-machine
+      - podman-compose
+      - podman-tui
       - fedora-packager
       - fedora-review
       - packit
