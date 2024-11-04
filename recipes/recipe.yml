@@ -77,6 +77,7 @@ modules:
       - rpmdevtools
       - rpmlint
       - policycoreutils
+      - sepolicy_analysis
       - libselinux-utils
       - selinux-policy-doc
       - selinux-policy-mls
