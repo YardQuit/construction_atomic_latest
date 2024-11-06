@@ -87,6 +87,8 @@ modules:
       - selinux-policy-targeted
       - setools-console
       - setools-console-analyses
+      - libvirt-devel
+      - xorriso
       - livecd-tools
       - pykickstart
       - rustup
