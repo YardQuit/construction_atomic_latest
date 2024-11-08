@@ -164,7 +164,6 @@ modules:
       - ptyxis
       - inxi
       - fastfetch
-      - chromium
       - fzf
       - sshfs
       - dislocker
